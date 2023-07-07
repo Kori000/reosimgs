@@ -197,7 +197,7 @@
       let success = false
 
       // 捕捉图片
-      document.querySelector('#topbar .formatOS').addEventListener('click', () => {
+      document.querySelector('#topbar .formatOS').addEventListener('click', async () => {
         if (success) return
         let content = editor.getContent()
         editor.originContent = content
@@ -211,8 +211,11 @@
           oldImgArr.push(imgElements[i].src)
         }
 
-        getImgNewSrc(oldImgArr, 1)
-        getImgNewSrc(oldBackGroundImageArr, 2)
+        await getImgNewSrc(oldImgArr, 1)
+        await getImgNewSrc(oldBackGroundImageArr, 2)
+
+        reosimgs.hideLoading(loadingDiv)
+        success = true
       })
 
       // 获取 img 新 src 函数
@@ -235,8 +238,6 @@
           if (status === 2) {
             collectBackgroundNewRes(fileArr)
           }
-          success = true
-          reosimgs.hideLoading(loadingDiv)
         } catch (error) {
           reosimgs.hideLoading(loadingDiv)
           throw new Error(error)
