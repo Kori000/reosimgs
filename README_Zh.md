@@ -4,7 +4,7 @@
 
 ## 功能
 
-- Tinymce 格式 img 标签的 src、background-image 的 url
+- Tinymce 格式化 img 标签的 src、background-image 的 url
 
 ### 介绍
 
