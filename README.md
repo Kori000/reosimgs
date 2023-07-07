@@ -1,5 +1,7 @@
 # reosimgs
 
+[![npm version](https://img.shields.io/npm/v/reosimgs.svg?style=flat-square)](https://www.npmjs.org/package/reosimgs)
+
 👀 [中文文档](https://github.com/Kori000/reosimgs/blob/main/README_Zh.md)
 
 ## Feature
