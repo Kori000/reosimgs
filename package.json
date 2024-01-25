@@ -1,6 +1,6 @@
 {
   "name": "reosimgs",
-  "version": "1.0.3",
+  "version": "1.0.31",
   "description": "Tinymce Plugin - Format img tag src, background-image url",
   "main": "index.js",
   "scripts": {
