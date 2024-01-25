@@ -40,7 +40,6 @@
 
 ```js
  initTinymce() {
-      const _this = this
       window.tinymce.init({
         selector: `#tinymceId`,
         plugins: 'reosimgs',

@@ -2,8 +2,10 @@ tinymce.PluginManager.add('reosimgs', function (editor, url) {
   var pluginName = '格式化所有图片为对象存储'
   window.reosimgs = {} //扔外部公共变量，也可以扔一个自定义的位置
 
-  var baseURL = tinymce.baseURL
-  var iframe1 = baseURL + '/plugins/reosimgs/upfiles.html'
+  const htmlUrl = '/tinymce/plugins/reosimgs/upfiles.html'
+
+  console.log({ checkUrl })
+  console.log('editor', editor.settings)
 
   // img 标签待替换的图
   reosimgs.formatRes = []
@@ -31,7 +33,7 @@ tinymce.PluginManager.add('reosimgs', function (editor, url) {
     return editor.windowManager.openUrl({
       title: pluginName,
       size: 'large',
-      url: iframe1,
+      url: htmlUrl,
       buttons: [
         {
           type: 'cancel',
